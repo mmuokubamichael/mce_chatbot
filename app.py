@@ -13,7 +13,7 @@ stemmer = LancasterStemmer()
 
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"]='postgres://nhfzekffngcxaz:81b52aab1d7191bd4e337b60131281c3fffed790bbce73ede86b3c12088da674@ec2-18-204-101-137.compute-1.amazonaws.com:5432/dbstb7s1c50j4t'
+app.config["DATABASE_URL"]='postgres://nhfzekffngcxaz:81b52aab1d7191bd4e337b60131281c3fffed790bbce73ede86b3c12088da674@ec2-18-204-101-137.compute-1.amazonaws.com:5432/dbstb7s1c50j4t'
 db=SQLAlchemy(app)
 
 class Mce(db.Model):
