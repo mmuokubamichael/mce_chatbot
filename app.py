@@ -7,13 +7,14 @@ import tflearn
 import pickle
 from nltk.stem.lancaster import LancasterStemmer
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 nltk.data.path.append('./nltk_data/')
 stemmer = LancasterStemmer()
 
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"]='sqlite:///mce.db'
+app.config["SQLALCHEMY_DATABASE_URI"]=os.environ.get('DATABASE_URL')
 db=SQLAlchemy(app)
 
 class Mce(db.Model):
