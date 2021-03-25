@@ -14,13 +14,19 @@ stemmer = LancasterStemmer()
 
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"]=os.environ.get('DATABASE_URL')
+app.config["SQLALCHEMY_DATABASE_URI"]='postgres://lrmblnrgliqize:f68a5084a90b05e68c1aba33d945417a1c7891317bcffd11ea7f4071f93481d1@ec2-34-198-31-223.compute-1.amazonaws.com:5432/d8khg822mrebg9'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 db=SQLAlchemy(app)
 
 class Mce(db.Model):
+    __tablename__= 'mce_question'
     id =db.Column(db.Integer,primary_key=True)
     question=db.Column(db.String(500))
     answer = db.Column(db.String(1000))
+    def __init__(self,question,answer):
+        self.question=question
+        self.answer=answer
+
     def __repr__(self):
         return '<Question %r>' % self.question
 
