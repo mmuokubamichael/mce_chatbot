@@ -6,7 +6,7 @@ It's an institutional departmental help chatbot that runs on whatsapp using twil
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/mmuokuba/mce_chatbot/main/(1)%20Activity%20_%20Mmuokuba%20Michael%20_%20LinkedIn%20-%20Google%20Chrome%2012_05_2023%2014_39_42.png?token=GHSAT0AAAAAACCSD4WSHEX2HCMHNW77LAL4ZC6IRTQ)
+![App Screenshot](https://raw.githubusercontent.com/mmuokuba/mce_chatbot/main/(1)%20Activity%20_%20Mmuokuba%20Michael%20_%20LinkedIn%20-%20Google%20Chrome%2012_05_2023%2014_39_42.png?token=GHSAT0AAAAAACCSD4WSAF552ROIG76XYHN2ZC6JOYA)
 
 
 ## Demo
